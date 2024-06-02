@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Module Demo</title>
+    <style>
+        #parent {
+            width: 500px;
+            height: 500px;
+            position: relative;
+            border: 1px solid black;
+        }
+        #nested {
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+        #car {
+            width: 50px;
+            position: absolute;
+            top: 100px;
+        }
+    </style>
 </head>
 <body>
+    <div id="parent">
+        <div id="nested"></div>
+    </div>
     <script src="main.js" defer></script>
 </body>
 </html>
